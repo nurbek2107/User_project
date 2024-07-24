@@ -34,7 +34,7 @@ function Navbar() {
   return (
     <>
       <Link href="/">
-        <div className="responsive_navbar bg-[#FF9500] flex items-center gap-10 justify-center pt-3 pb-3 text-white rounded-md mt-2 cursor-pointer m-4">
+        <div className="responsive_navbar  bg-[#FF9500] flex items-center gap-10 justify-center pt-3 pb-3 text-white rounded-md mt-2 cursor-pointer m-4">
           Free Courses 🌟 Sale Ends Soon, Get It Now
           <svg
             width="18"
