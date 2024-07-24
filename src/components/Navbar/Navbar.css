@@ -1,40 +1,31 @@
-.responsive_navbar{
-    @media (max-width: 640px) {
-        font-size: 12px;
-    }
-}
-.text_hover{
-    padding: 14px 24px;
-    transition: all .5s ease;
-}
-.text_hover:hover{
-    background-color: #F1F1F3;
-    border-radius: 12px;
-}
-
-/* Navbar.css */
-
-/* Styling for the banner */
+/* General styles */
 .responsive_navbar {
-    font-size: 14px; /* Default font size */
-    padding: 12px 16px; /* Padding for the banner */
-    background-color: #FF9500; /* Background color */
-    color: white; /* Text color */
-    display: flex; /* Flex layout for the banner */
-    align-items: center; /* Center align items vertically */
-    justify-content: center; /* Center align items horizontally */
-    border-radius: 8px; /* Rounded corners */
-    margin: 16px; /* Margin around the banner */
-    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 14px;
+    padding: 12px 16px;
+    background-color: #FF9500;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin: 16px;
+    cursor: pointer;
+    transition: font-size 0.3s ease;
 }
 
 @media (max-width: 640px) {
     .responsive_navbar {
-        font-size: 12px; /* Smaller font size on small screens */
+        font-size: 8px;
     }
 }
 
-/* Styling for menu items */
+@media (max-width: 440px) {
+    .responsive_navbar {
+        font-size: 10px;
+        gap: 10px;
+    }
+}
+
 .text_hover {
     padding: 14px 24px;
     transition: background-color 0.5s ease, border-radius 0.5s ease;
@@ -51,43 +42,46 @@
 }
 
 .navbar {
-    display: flex; /* Flexbox for alignment */
-    justify-content: space-between; /* Space between items */
-    align-items: center; /* Center align items vertically */
-    padding: 16px; /* Padding inside the navbar */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
 }
 
 /* Mobile menu styling */
 .right_text {
     transition: transform 0.3s ease-in-out;
-    z-index: 10;
-    position: absolute;
+    z-index: 1000;
+    position: fixed;
     top: 0;
     right: 0;
     width: 100%;
-    max-width: 300px; /* Max width of the mobile menu */
-    background-color: white; /* Background color for the menu */
-    transform: translateX(100%); /* Hide the menu off-screen */
-    overflow: hidden; /* Hide overflow content */
+    max-width: 300px;
+    background-color: #fff;
+    transform: translateX(100%);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
 .right_text.slide-in {
-    transform: translateX(0); /* Slide in the menu */
+    transform: translateX(0);
 }
 
 .right_text.slide-out {
-    transform: translateX(100%); /* Slide out the menu */
+    transform: translateX(100%);
 }
 
-/* Styling for larger screens */
 @media (min-width: 768px) {
     .right_text {
         position: static;
         transform: none;
         background-color: transparent;
         max-width: none;
-        overflow: visible; /* Allow overflow on larger screens */
-        display: flex; /* Flexbox for alignment */
-        gap: 16px; /* Space between items */
+        overflow: visible;
+        flex-direction: row;
+        gap: 16px;
+        height: auto;
     }
 }
