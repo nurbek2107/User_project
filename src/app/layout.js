@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-
+import Navbar from "@/components/Navbar/page";
+import Footer from "@/components/Footer/page";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -14,7 +15,12 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="shortcut icon" href="../assets/favicon.ico" />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Navbar/>
+        {children}
+        <Footer/>
+
+      </body>
     </html>
   )
 }
