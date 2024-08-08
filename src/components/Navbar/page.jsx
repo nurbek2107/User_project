@@ -1,4 +1,4 @@
-"use client";
+"use client"; // Ensure this component is treated as a client component
 
 import Link from "next/link";
 import React, { useState, useEffect, useRef } from "react";
@@ -34,7 +34,7 @@ function Navbar() {
   return (
     <>
       <Link href="/">
-        <div className="responsive_navbar  bg-[#FF9500] flex items-center gap-10 justify-center pt-3 pb-3 text-white rounded-md mt-2 cursor-pointer m-4">
+        <div className="responsive_navbar">
           Free Courses 🌟 Sale Ends Soon, Get It Now
           <svg
             width="18"
@@ -78,7 +78,7 @@ function Navbar() {
             </div>
             <div
               ref={menuRef}
-              className={`right_text flex flex-col md:flex-row gap-4 ${menuOpen ? "slide-in" : "slide-f"}`}
+              className={`right_text ${menuOpen ? "slide-in" : "slide-f"}`}
             >
               <Link href="/"><div className="text_hover">Home</div></Link>
               <Link href="/"><div className="text_hover">Courses</div></Link>
@@ -92,6 +92,7 @@ function Navbar() {
             <div className="md:hidden cursor-pointer" onClick={toggleMenu}>
               {menuOpen ? (
                 <svg
+                className="slide-x"
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
@@ -107,8 +108,8 @@ function Navbar() {
                   />
                 </svg>
               ) : (
-                <svg
-                  width="24"
+                <svg  
+                  width="24"  
                   height="24"
                   viewBox="0 0 24 24"
                   fill="none"
