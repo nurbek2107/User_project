@@ -113,7 +113,7 @@ function About() {
       <section className='relative bg-white rounded-md main-container flex flex-wrap justify-between items-center p-[60px]' style={{ marginBottom: `100px` }}>
         <div className='z-10'>
           <h1 className='text-[32px] font-semibold leading-[40px] mb-[15px]'>
-            <span className='text-[#FF9500]'>Together</span>, let's shape the future of digital <br /> innovation
+            <span className='text-[#FF9500]'>Together</span>, let s shape the future of digital <br /> innovation
           </h1>
           <p className='text-[16px] text-[#4c4c4d]'>
             Join us on this exciting learning journey and unlock your potential in design and development.
