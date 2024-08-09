@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
-
+import Image from 'next/image'
 function Footer() {
   // const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(location)}`;
 
@@ -9,22 +9,22 @@ function Footer() {
       <div className='main-container footer text-base-content p-10  flex flex-wrap gap-20  justify-between '>
         <nav className='flex flex-wrap gap-16 '>
           <Link href={`/`}>
-            <img className='w-[44px] h-[44px]' src="../assets/Logo.png" alt="Logo" />
+            <Image className='w-[44px] h-[44px]' src="../assets/Logo.png" alt="Logo" />
           </Link>
 
           <div className='flex flex-col gap-2 text-[13px]'>
             <p className='flex items-center gap-[6px]'>
-              <img className='w-[20px]' src="../assets/email.svg" alt="email" />
+              <Image className='w-[20px]' src="../assets/email.svg" alt="email" />
               <Link href="mailto:hello@skillbridge.com">hello@skillbridge.com</Link>
             </p>
 
             <p className='flex items-center gap-[6px]'>
-              <img className='w-[20px]' src="../assets/phone.svg" alt="phone" />
+              <Image className='w-[20px]' src="../assets/phone.svg" alt="phone" />
               <Link href="tel:+9191813232309">+91 91813 23 2309</Link>
             </p>
 
             <p className='flex items-center gap-[6px]'>
-              <img className='w-[20px]' src="../assets/location.svg" alt="location" />
+              <Image className='w-[20px]' src="../assets/location.svg" alt="location" />
               <Link href="/">Somewhere in the World</Link>
             </p>
           </div>
