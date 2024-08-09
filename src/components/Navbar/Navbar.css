@@ -25,12 +25,13 @@
         gap: 10px;
     }
 }
+
 .right_text {
     display: flex;
     gap: 16px;
     /* Space between navigation items */
     align-items: center;
-    
+
 
 }
 
@@ -60,7 +61,8 @@
         display: none;
         animation: slideIn 0.3s ease-in-out;
     }
-    .slide-x{
+
+    .slide-x {
         z-index: 100;
         position: absolute;
         right: 20px;
