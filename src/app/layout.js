@@ -16,10 +16,9 @@ export default function RootLayout({ children }) {
         <link rel="shortcut icon" href="../assets/favicon.ico" />
       </head>
       <body className={inter.className}>
-        <Navbar/>
+        <Navbar />
         {children}
-        <Footer/>
-
+        <Footer />
       </body>
     </html>
   )
