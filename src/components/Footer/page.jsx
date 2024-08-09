@@ -6,7 +6,7 @@ function Footer() {
 
   return (
     <footer className="footer-fixed bg-white">
-      <div className='main-container footer text-base-content p-10  flex flex-wrap gap-20 justify-between'>
+      <div className='main-container footer text-base-content p-10  flex flex-wrap gap-20  justify-between '>
         <nav className='flex flex-wrap gap-16 '>
           <Link href={`/`}>
             <img className='w-[44px] h-[44px]' src="../assets/Logo.png" alt="Logo" />
