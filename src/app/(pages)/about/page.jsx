@@ -1,3 +1,5 @@
+"use client";
+import { Button } from '@material-tailwind/react'
 import React from 'react'
 
 function About() {
@@ -103,6 +105,25 @@ function About() {
               The digital landscape is constantly evolving, and we strive to stay at the forefront of industry trends. We regularly update our course content to ensure our students receive the latest knowledge and skills.
             </p>
           </div>
+        </div>
+      </section>
+
+      <section className='relative bg-white rounded-md main-container flex flex-wrap justify-between items-center p-[60px]' style={{ marginBottom: `100px` }}>
+        <div className='z-10'>
+          <h1 className='text-[32px] font-semibold leading-[40px] mb-[15px]'>
+            <span className='text-[#FF9500]'>Together</span>, let's shape the future of digital <br /> innovation
+          </h1>
+          <p className='text-[16px] text-[#4c4c4d]'>
+            Join us on this exciting learning journey and unlock your potential in design and development.
+          </p>
+        </div>
+
+        <img className='absolute z-0 right-[180px]' src="../assets/rectangle.svg" alt="rectangle" />
+
+        <div>
+          <Button className='bg-[#FF9500]'>
+            Join Now
+          </Button>
         </div>
       </section>
     </>
