@@ -35,8 +35,8 @@ function Navbar() {
   return (
     <>
       <UpperNavbar />
-      <div className="main-container">
-        <div className="navbar flex justify-between items-center p-4">
+      <header className="p-4 border-b-2">
+        <div className="navbar main-container flex justify-between items-center">
           <div className="left flex gap-5 items-center">
             <div className="left_svg">
               <Link href="/">
@@ -110,7 +110,7 @@ function Navbar() {
             </div>
           </div>
         </div>
-      </div>
+      </header>
     </>
   );
 }
