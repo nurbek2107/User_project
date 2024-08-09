@@ -120,7 +120,7 @@ function About() {
           </p>
         </div>
 
-        <Image width={100} height={100} className='absolute z-0 right-[180px]' src="/assets/rectangle.svg" alt="rectangle" />
+        <Image width={268} height={100} className='absolute z-0 right-[180px]' src="/assets/rectangle.svg" alt="rectangle" />
 
         <div>
           <Link href={`/courses`}>
