@@ -1,5 +1,6 @@
 'use client'
 import { Button } from '@material-tailwind/react'
+import Link from 'next/link'
 import React from 'react'
 
 function About() {
@@ -121,9 +122,11 @@ function About() {
         <img className='absolute z-0 right-[180px]' src="../assets/rectangle.svg" alt="rectangle" />
 
         <div>
-          <Button className='bg-[#FF9500]'>
-            Join Now
-          </Button>
+          <Link href={`/courses`}>
+            <Button className='bg-[#FF9500]'>
+              Join Now
+            </Button>
+          </Link>
         </div>
       </section>
     </>
