@@ -22,6 +22,7 @@ module.exports = {
   },
   plugins: [
     require('daisyui'),
-    // Add any additional plugins here if needed
+    require('tailwindcss'),
+    require('autoprefixer'),
   ],
 };
