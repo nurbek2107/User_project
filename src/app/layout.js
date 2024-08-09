@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="shortcut icon" href="../assets/favicon.ico" />
+        <link rel="shortcut icon" href="../assets/favico.png" />
       </head>
       <body className={inter.className}>
         <Navbar />
