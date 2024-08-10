@@ -1,17 +1,19 @@
-"use client"; // Ensure this component is treated as a client component
+"use client";
 
+import { useEffect, useState, useRef } from "react";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
-import React, { useState, useEffect, useRef } from "react";
-import "./Navbar.css";
 import { Button } from "@material-tailwind/react";
 import UpperNavbar from "../UpperNavbar";
+import "./Navbar.css";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef(null);
+  const pathname = usePathname();
 
   const toggleMenu = () => {
-    setMenuOpen(prev => !prev);
+    setMenuOpen((prev) => !prev);
   };
 
   const handleClickOutside = (event) => {
@@ -31,6 +33,11 @@ function Navbar() {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [menuOpen]);
+
+  useEffect(() => {
+    // Menyu yopiladi, agar sahifa o'zgargan bo'lsa
+    setMenuOpen(false);
+  }, [pathname]);
 
   return (
     <>
