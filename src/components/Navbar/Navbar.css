@@ -28,11 +28,17 @@
 
 .right_text {
     display: flex;
-    gap: 16px;
+    gap: 36px;
     /* Space between navigation items */
     align-items: center;
 
+    a {
+        transition: all 0.4s;
+    }
 
+    a:hover {
+        color: #FF9500;
+    }
 }
 
 @media (max-width: 768px) {
@@ -50,6 +56,7 @@
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         transition: all .5s ease;
         position: fixed;
+        gap: 16px;
 
         a {
             width: 100%;
@@ -58,6 +65,8 @@
 
         a:hover {
             background-color: lightgrey;
+            transition: all 0.3s;
+            color: rgb(46, 45, 45);
         }
     }
 
