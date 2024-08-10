@@ -17,6 +17,36 @@ function Courses_cards() {
             hearts:'0',
 
           },
+          {
+            id: 2,
+            src: "https://images.unsplash.com/photo-1494145904049-0dca59b4bbad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80",
+            title: "Beyond Builder",
+            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci placeat.",
+            eyes:'0',
+            level:'0',
+            hearts:'0',
+
+          },
+          {
+            id: 3,
+            src: "https://images.unsplash.com/photo-1494145904049-0dca59b4bbad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80",
+            title: "Beyond Builder",
+            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci placeat.",
+            eyes:'0',
+            level:'0',
+            hearts:'0',
+
+          },
+          {
+            id: 4,
+            src: "https://images.unsplash.com/photo-1494145904049-0dca59b4bbad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80",
+            title: "Beyond Builder",
+            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci placeat.",
+            eyes:'0',
+            level:'0',
+            hearts:'0',
+
+          },
           // ... other course objects
         ].map((course) => (
           <Link key={course.id} href={`/courses/${course.id}`}>
