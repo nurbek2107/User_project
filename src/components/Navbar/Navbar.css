@@ -50,6 +50,15 @@
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         transition: all .5s ease;
         position: fixed;
+
+        a {
+            width: 100%;
+            text-align: center;
+        }
+
+        a:hover {
+            background-color: lightgrey;
+        }
     }
 
     .right_text.slide-in {
@@ -106,7 +115,7 @@
 
 /* Navigation link styles */
 .text_hover {
-    padding: 8px 16px;
+    padding: 8px 0px;
     /* Add padding for better spacing */
     cursor: pointer;
 }
@@ -114,7 +123,8 @@
 /* Add margin-top to navigation items on mobile */
 @media (max-width: 768px) {
     .text_hover {
-        margin-top: 20px;
+        margin-top: 8px;
+        margin-bottom: 8px;
         /* Add margin-top for spacing between links */
     }
 }
