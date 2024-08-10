@@ -83,11 +83,11 @@ function Navbar() {
           <div className="right flex items-center gap-4">
             {kirish ?
               <Button onClick={() => {
-                setKirish(!kirish)
+                setKirish(false)
                 toast.success("Kirish qilindi");
               }} className="bg-[#FF9500] text-white">Kirish</Button>
               :
-              <Profile />
+              <Profile setKirish={setKirish} kirish={kirish} />
             }
             <div className="md:hidden cursor-pointer" onClick={toggleMenu}>
               {menuOpen ? (
