@@ -6,9 +6,12 @@ import Link from "next/link";
 import { Button } from "@material-tailwind/react";
 import UpperNavbar from "../UpperNavbar";
 import "./Navbar.css";
+import Profile from "../Profile";
+import toast from "react-hot-toast";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  let [kirish, setKirish] = useState(true);
   const menuRef = useRef(null);
   const pathname = usePathname();
 
@@ -78,7 +81,14 @@ function Navbar() {
             </div>
           </div>
           <div className="right flex items-center gap-4">
-            <Button className="bg-[#FF9500] text-white">Kirish</Button>
+            {kirish ?
+              <Button onClick={() => {
+                setKirish(!kirish)
+                toast.success("Kirish qilindi");
+              }} className="bg-[#FF9500] text-white">Kirish</Button>
+              :
+              <Profile />
+            }
             <div className="md:hidden cursor-pointer" onClick={toggleMenu}>
               {menuOpen ? (
                 <svg
