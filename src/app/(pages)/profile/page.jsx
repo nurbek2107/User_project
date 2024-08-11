@@ -36,6 +36,8 @@ function Profile() {
     },
   ]
 
+  let imgUrl = "https://api.dicebear.com/9.x/initials/svg?seed=najmiddin"
+
   // functions
   let handleSubmit = (e) => {
     e.preventDefault()
@@ -48,7 +50,7 @@ function Profile() {
           <Image
             width={200}
             height={200}
-            src="http://api.dicebear.com/9.x/initials/svg?seed=najmiddin"
+            src={imgUrl}
             alt="user img"
             className="w-11/12 select-none rounded-md"
             layout="intrinsic"
