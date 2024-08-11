@@ -49,7 +49,7 @@ function Courses_cards() {
           },
           // ... other course objects
         ].map((course) => (
-          <Link key={course.id} href={`/courses/${course.id}`}>
+          <>
             <div className="card shadow-md bg-white mt-10 w-[350px] h-[300px] transition-shadow hover:shadow-xl cursor-pointer">
               <div className="group w-[330px] m-auto -mt-10 relative rounded-xl items-center justify-center overflow-hidden shadow-xl transition-shadow hover:shadow-xl hover:shadow-black/30">
                 <div>
@@ -74,6 +74,8 @@ function Courses_cards() {
                   </button>
                 </div>
               </div>
+              <Link key={course.id} href={`/courses/${course.id}`}>
+
               <div className="flex gap-10 mb-8 items-center justify-center">
               <div className="flex flex-col items-center gap-1">
                 <svg
@@ -143,8 +145,10 @@ function Courses_cards() {
                 <p className="text-sm font-dmserif font-bold"> {course.hearts}</p>
             </div>
             </div>
-            </div>
           </Link>
+            
+            </div>
+          </>
         ))}
       </div>
     </div>
