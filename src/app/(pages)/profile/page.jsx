@@ -45,7 +45,7 @@ function Profile() {
     <div>
       <section className='main-container grid grid-cols-2 grid-rows-11 gap-[30px]' style={{ marginTop: `30px`, marginBottom: `100px` }}>
         <div className="row-span-11 rounded-3xl flex flex-col items-center p-[50px] shadow-box">
-          <img
+          <Image
             // width={200}
             // height={200}
             src="http://api.dicebear.com/9.x/initials/svg?seed=najmiddin"
@@ -165,7 +165,7 @@ function Profile() {
           <div className="px-10 py-8 flex flex-col gap-6 mb-2">
             {
               userLinks.length == 0 ?
-                <p>You don't have any social media accounts or projects.</p>
+                <p>You don t have any social media accounts or projects.</p>
                 :
                 userLinks.map((userLink) => {
                   return (
