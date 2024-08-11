@@ -67,7 +67,7 @@ export default function AvatarWithUserDropdown({ setKirish, kirish }) {
                         withBorder={true}
                         color="blue-gray"
                         className="p-0.5"
-                        src="https://api.dicebear.com/9.x/initials/svg?seed=Najmiddin"
+                        src="https://api.dicebear.com/9.x/initials/svg?seed=nasriddinovv"
                     />
                 </Button>
             </MenuHandler>
