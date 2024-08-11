@@ -8,9 +8,9 @@ function Courses_cards() {
       <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
         {[
           {
-            id: 1,
+            id: "Backend",
             src: "https://images.unsplash.com/photo-1494145904049-0dca59b4bbad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80",
-            title: "Beyond Builder",
+            title: "Backend",
             description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci placeat.",
             eyes:'0',
             level:'0',
@@ -18,9 +18,9 @@ function Courses_cards() {
 
           },
           {
-            id: 2,
+            id: "Frontend",
             src: "https://images.unsplash.com/photo-1494145904049-0dca59b4bbad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80",
-            title: "Beyond Builder",
+            title: "Frontend",
             description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci placeat.",
             eyes:'0',
             level:'0',
@@ -28,9 +28,9 @@ function Courses_cards() {
 
           },
           {
-            id: 3,
+            id: "Design",
             src: "https://images.unsplash.com/photo-1494145904049-0dca59b4bbad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80",
-            title: "Beyond Builder",
+            title: "Design",
             description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci placeat.",
             eyes:'0',
             level:'0',
@@ -38,9 +38,9 @@ function Courses_cards() {
 
           },
           {
-            id: 4,
+            id: "Flatter",
             src: "https://images.unsplash.com/photo-1494145904049-0dca59b4bbad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80",
-            title: "Beyond Builder",
+            title: "Flatter",
             description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci placeat.",
             eyes:'0',
             level:'0',
@@ -69,7 +69,7 @@ function Courses_cards() {
                   <p className="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                     {course.description}
                   </p>
-                  <Link href={`/courses/${course.id}`}>
+                  <Link href={`/courses/${course.Name}`}>
                   <button className="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">
                     See More
                   </button>
