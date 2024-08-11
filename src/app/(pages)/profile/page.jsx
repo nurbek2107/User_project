@@ -46,12 +46,12 @@ function Profile() {
       <section className='main-container grid grid-cols-2 grid-rows-11 gap-[30px]' style={{ marginTop: `30px`, marginBottom: `100px` }}>
         <div className="row-span-11 rounded-3xl flex flex-col items-center p-[50px] shadow-box">
           <Image
-            // width={200}
-            // height={200}
+            width={200}
+            height={200}
             src="http://api.dicebear.com/9.x/initials/svg?seed=najmiddin"
             alt="user img"
             className="w-11/12 select-none rounded-md"
-          // layout="intrinsic"
+            layout="intrinsic"
           />
 
           <div className="w-11/12 mt-[25px]">
