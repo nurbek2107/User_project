@@ -69,13 +69,14 @@ function Courses_cards() {
                   <p className="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                     {course.description}
                   </p>
+                  <Link href={`/courses/${course.id}`}>
                   <button className="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">
                     See More
                   </button>
+                </Link>
                 </div>
               </div>
               <Link key={course.id} href={`/courses/${course.id}`}>
-
               <div className="flex gap-10 mb-8 items-center justify-center">
               <div className="flex flex-col items-center gap-1">
                 <svg
