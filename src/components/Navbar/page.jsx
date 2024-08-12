@@ -72,7 +72,7 @@ function Navbar() {
             <div
               ref={menuRef}
               className={`right_text ${menuOpen ? "slide-in" : "slide-f"} font-medium`}>
-              <Link href="/"><div className="text_hover">Home</div></Link>
+              <Link href="/home"><div className="text_hover">Home</div></Link>
               <Link href="/courses"><div className="text_hover">Courses</div></Link>
               <Link href="/about"><div className="text_hover">About Us</div></Link>
               <Link href="/pricing"><div className="text_hover">Pricing</div></Link>
