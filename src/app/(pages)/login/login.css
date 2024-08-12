@@ -1,0 +1,48 @@
+.div-1{
+    max-width: 1200px;
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: 55% 40%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2%;
+}
+.div-3{
+    padding: 35px;
+    border-radius: 10px;
+}
+@media (max-width: 110px){
+   .div-4{
+    font-size: 10px;
+   }
+}
+@media (max-width: 800px) {
+.div-1{
+    display:flex;
+    flex-direction: column-reverse;
+    margin-top: 200px;
+    margin: 50px auto;
+    gap: 40px;
+}
+.div-3{
+    width: 600px;
+}
+.div-2{
+    text-align: center;
+    margin: 0 30px;
+}
+
+}
+@media (max-width: 613px){
+    .div-3{
+        width: 90%;
+        padding: 20px;
+    }
+    .div-2{
+        text-align: center;
+        width: 90%;
+    }
+    .div-4{
+        font-size: 12px;
+    }
+}
