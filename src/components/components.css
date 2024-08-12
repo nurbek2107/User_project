@@ -117,3 +117,67 @@
     outline-offset: 5px;
     background-color: #fff
 }
+
+/* HomeCards */
+
+
+
+.animated-text{
+    font-size: 32px;
+    font-weight: 600;
+    min-width: 290px;
+}
+
+.animated-text span{
+    position: relative;
+}
+
+.animated-text span::before{
+    content: "Frontend";
+    color: #ff7f50;
+    animation: words 20s infinite;
+}
+
+.animated-text span::after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    background-color: #f7f7f8;
+    border-left: 2px solid #ffa826;
+    right: -8px;
+    animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+    to{
+        border-left: 2px solid #ff7f5000;
+    }
+}
+
+@keyframes words {
+    0%,20%{
+        content: "Frontend";
+    }
+    21%,40%{
+        content: "Backend";
+    }
+    41%,60%{
+        content: "Desktop";
+    }
+    61%,80%{
+        content: "Mobile";
+    }
+    81%,100%{
+        content: "Robotics";
+    }
+}
+
+@keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
+    }
+}
