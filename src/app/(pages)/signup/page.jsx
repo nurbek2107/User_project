@@ -142,7 +142,7 @@ function Signup() {
                         </div>
                         <div className='flex flex-col gap-[15px] mt-[10px]'>
                             <div className='div-4 flex font-[400] text-[14px] text-[#656567]  items-center gap-2'><input value={false} type="checkbox"  className="checkbox checkbox-warning" />
-                            <p >I agree with </p><a href="">Termis of Use</a><p>and</p><a href="">Privacy Policy</a></div>
+                            <p >I agree with </p></div>
                         </div>
                         <button className='mt-[10px] btn text-[15px] w-full h-[40px] bg-[#FF9500] border-[#FF9500] text-[#fff] hover:bg-[#ff9500a3] hover:border-[#ff9500a3]'>Login</button>
                         <div className='border-b-[1px] mt-[24px] flex justify-center rounded-[0] '><p className=' mb-[-12px] bg-white px-2'>OK</p></div>
