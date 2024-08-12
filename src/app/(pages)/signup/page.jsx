@@ -1,4 +1,5 @@
 "use client"
+import { Button } from '@material-tailwind/react';
 import React, { useState } from 'react'
 import "../login/login.css"
 function Signup() {
@@ -56,11 +57,11 @@ function Signup() {
                             />
                             <p className="font-[700] text-[15px] text-[#333]">{router[id].name}</p>
                         </div>
-                        <button className="btn">Read Full Story</button>
+                        <Button className="btn">Read Full Story</Button>
                     </div>
                 </div>
                 <div className="w-full flex justify-end gap-3 mt-[22px]">
-                    <button onClick={prevSlide} className="btn bg-white text-[50px]">
+                    <Button onClick={prevSlide} className="btn bg-white text-[50px]">
                         <svg
                             width="16"
                             height="13"
@@ -75,8 +76,8 @@ function Signup() {
                                 fill="#262626"
                             />
                         </svg>
-                    </button>
-                    <button onClick={nextSlide} className="btn bg-white text-[50px]">
+                    </Button>
+                    <Button onClick={nextSlide} className="btn bg-white text-[50px]">
                         <svg
                             width="16"
                             height="13"
@@ -91,7 +92,7 @@ function Signup() {
                                 fill="#262626"
                             />
                         </svg>
-                    </button>
+                    </Button>
                 </div>
             </div>
             <div className='div-3 bg-white'>
@@ -144,9 +145,9 @@ function Signup() {
                             <div className='div-4 flex font-[400] text-[14px] text-[#656567]  items-center gap-2'><input value={false} type="checkbox"  className="checkbox checkbox-warning" />
                             <p >I agree with </p></div>
                         </div>
-                        <button className='mt-[10px] btn text-[15px] w-full h-[40px] bg-[#FF9500] border-[#FF9500] text-[#fff] hover:bg-[#ff9500a3] hover:border-[#ff9500a3]'>Login</button>
+                        <Button className='mt-[10px] btn text-[15px] w-full h-[40px] bg-[#FF9500] border-[#FF9500] text-[#fff] hover:bg-[#ff9500a3] hover:border-[#ff9500a3]'>Login</Button>
                         <div className='border-b-[1px] mt-[24px] flex justify-center rounded-[0] '><p className=' mb-[-12px] bg-white px-2'>OK</p></div>
-                        <button className='mt-[30px] btn w-full  text-[14px]'>
+                        <Button className='mt-[30px] btn w-full  text-[14px]'>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                          <g clipPath="url(#clip0_152_4476)">
                         <path d="M23.7643 12.2764C23.7643 11.4607 23.6982 10.6406 23.5571 9.83807H12.2383V14.4591H18.72C18.451 15.9494 17.5868 17.2678 16.3213 18.1056V21.1039H20.1883C22.4591 19.0139 23.7643 15.9274 23.7643 12.2764Z" fill="#4285F4"/>
@@ -159,7 +160,7 @@ function Signup() {
                         <rect width="24" height="24" fill="white"/>
 </clipPath>
 </defs>
-</svg>Login with Google</button>
+</svg>Login with Google</Button>
 <div className='flex '>
 
 <a className='text-center text-[15px] w-full mt-[10px]' href="">Don’t have an account? Sign Up </a>
