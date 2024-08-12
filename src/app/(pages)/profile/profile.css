@@ -1,0 +1,236 @@
+/* edit profile */
+.Btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100px;
+    height: 40px;
+    border: none;
+    padding: 0px 20px;
+    background-color: rgb(168, 38, 255);
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px rgb(140, 32, 212);
+    transition-duration: .3s;
+}
+
+.svg {
+    width: 13px;
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    fill: white;
+    transition-duration: .3s;
+}
+
+.Btn:hover {
+    color: transparent;
+}
+
+.Btn:hover svg {
+    right: 43%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    transition-duration: .3s;
+}
+
+.Btn:active {
+    transform: translate(3px, 3px);
+    transition-duration: .3s;
+    box-shadow: 2px 2px 0px rgb(140, 32, 212);
+}
+
+
+/* add item */
+.add-item {
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: #00a600;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+    background: #00a600;
+}
+
+.add-item,
+.add-item span {
+    transition: 200ms;
+}
+
+.add-item .text {
+    transform: translateX(35px);
+    color: white;
+    font-weight: bold;
+}
+
+.add-item .icon {
+    position: absolute;
+    border-left: 1px solid #007300;
+    transform: translateX(110px);
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-item svg {
+    width: 15px;
+    fill: #eee;
+}
+
+.add-item:hover {
+    background: #00a600;
+}
+
+.add-item:active {
+    background: #00cc00;
+}
+
+.add-item:hover .text {
+    color: transparent;
+}
+
+.add-item:hover .icon {
+    width: 150px;
+    border-left: none;
+    transform: translateX(0);
+}
+
+.add-item:focus {
+    outline: none;
+}
+
+.add-item:active .icon svg {
+    transform: scale(0.8);
+}
+
+.buttonSpan {
+    color: white;
+    margin: 150px;
+    font-size: 30px;
+}
+
+
+/* edit-desc */
+.edit-desc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    border: solid 3px transparent;
+    background-clip: padding-box;
+    box-shadow: 0px 0px 0px 3px #ffffff00;
+    color: white;
+    min-height: 43px;
+    padding: 0 13px 0 13px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all .5s ease;
+}
+
+.edit-desc:active {
+    transform: scale(.9);
+    transition: all 100ms ease;
+}
+
+.edit-desc:hover {
+    box-shadow: 0px 0px 0px 3px #30a1b8;
+}
+
+.edit-desc svg {
+    width: 16px;
+}
+
+/* edit black btn */
+.Btn-black {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100px;
+    height: 40px;
+    border: none;
+    padding: 0px 20px;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px black;
+    transition-duration: 0.3s;
+}
+
+.svg {
+    width: 13px;
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    fill: white;
+    transition-duration: 0.3s;
+}
+
+.Btn-black:hover {
+    color: transparent;
+}
+
+.Btn-black:hover svg {
+    right: 43%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    transition-duration: 0.3s;
+}
+
+.Btn-black:active {
+    transform: translate(3px, 3px);
+    transition-duration: 0.3s;
+    box-shadow: 2px 2px 0px white;
+}
+
+
+/* btn submit */
+.button-submit {
+    width: 150px;
+    padding: 0;
+    border: none;
+    transform: rotate(5deg);
+    transform-origin: center;
+    font-family: "Gochi Hand", cursive;
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+    padding-bottom: 3px;
+    border-radius: 5px;
+    box-shadow: 0 2px 0 #494a4b;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background-color: #5cdb95;
+}
+
+.button-submit span {
+    background: #f1f5f8;
+    display: block;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: 2px solid #494a4b;
+}
+
+.button-submit:active {
+    transform: translateY(5px);
+    padding-bottom: 0px;
+    outline: 0;
+}
+
+.button-reset {
+    transform: rotate(-5deg);
+    background-color: rgb(140, 32, 212);
+}

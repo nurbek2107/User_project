@@ -1,0 +1,98 @@
+.about_skill_block {
+    display: none;
+}
+
+.video-container {
+    display: none;
+    position: relative;
+    width: 23rem;
+    height: 25rem;
+    background-color: #f7f7f8;
+}
+
+.video-container video {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: inherit;
+}
+
+@media screen and (max-width: 1220px) {
+    .skillbridge {
+        padding-left: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .about_skill_none {
+        display: none;
+    }
+
+    .about_skill_block {
+        display: block;
+    }
+
+    .video-container,
+    .video-container video {
+        display: block;
+    }
+
+    .video-container {
+        padding-right: 1.5rem;
+    }
+
+    .about_container {
+        background-color: #fff;
+    }
+}
+
+@media screen and (max-width: 769px) {
+
+    .video-container,
+    .video-container video {
+        display: none;
+    }
+
+    .about_container {
+        background-color: #f7f7f8;
+    }
+
+    .skillbridge {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+
+    .absolute_img {
+        display: none;
+    }
+
+    .last_sec button {
+        margin-top: 3rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h1.skillbridge {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .last_sec {
+        flex-direction: column;
+        align-items: center;
+
+        button {
+            margin-top: 3rem;
+        }
+
+        h1 {
+            font-size: 27px;
+            line-height: 35px;
+        }
+    }
+}

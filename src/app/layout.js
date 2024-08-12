@@ -1,8 +1,10 @@
-import { Inter } from "next/font/google";
+import { Open_Sans, Onest } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar/page";
 import Footer from "@/components/Footer/page";
-const inter = Inter({ subsets: ["latin"] });
+import { Toaster } from "react-hot-toast";
+const onest = Onest({ subsets: ["latin"] });
+const openSans = Open_Sans({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Enworit",
@@ -13,13 +15,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="shortcut icon" href="../assets/favicon.ico" />
+        <link rel="shortcut icon" href="../assets/favico.png" />
       </head>
-      <body className={inter.className}>
-        <Navbar/>
-        {children}
-        <Footer/>
-
+      <body className={onest.className}>
+        <Navbar />
+        <main>
+          {children}
+          <Toaster />
+        </main>
+        <Footer />
       </body>
     </html>
   )

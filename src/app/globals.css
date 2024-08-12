@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     min-height: 100vh;
     display: flex;
@@ -17,4 +23,26 @@ body {
 
 .footer-fixed {
     margin-top: auto;
+}
+
+.shadow-box {
+    box-shadow: 0px 10px 22px 0px rgba(0, 0, 0, 0.2);
+}
+
+.gradient-text {
+    color: #ce00f2;
+    background-image: -webkit-linear-gradient(0deg, #ce00f2 0%, #ffa826 44%, #e91e63 59%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.gradient-text2 {
+    color: #0213f5;
+    background-image: -webkit-linear-gradient(90deg, #0213f5 0%, #e91e63 45%, #cddc39 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
 }
