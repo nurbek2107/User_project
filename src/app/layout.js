@@ -1,7 +1,5 @@
 import { Open_Sans, Onest } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar/page";
-import Footer from "@/components/Footer/page";
 import { Toaster } from "react-hot-toast";
 const onest = Onest({ subsets: ["latin"] });
 const openSans = Open_Sans({ subsets: ["latin"] });
@@ -18,12 +16,8 @@ export default function RootLayout({ children }) {
         <link rel="shortcut icon" href="../assets/favico.png" />
       </head>
       <body className={onest.className}>
-        <Navbar />
-        <main>
-          {children}
-          <Toaster />
-        </main>
-        <Footer />
+        {children}
+        <Toaster />
       </body>
     </html>
   )

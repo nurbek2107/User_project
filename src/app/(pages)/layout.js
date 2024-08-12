@@ -1,19 +1,21 @@
 import Footer from '@/components/Footer/page'
 import Navbar from '@/components/Navbar/page'
+import React from 'react'
 
-// css
 import './globals.css'
 
-function App() {
+function RootLayout({ children }) {
   return (
     <>
-      <div>
+      <div className=''>
         <Navbar />
-        <main>App</main>
+        <main>
+          {children}
+        </main>
       </div>
       <Footer />
     </>
   )
 }
 
-export default App
+export default RootLayout

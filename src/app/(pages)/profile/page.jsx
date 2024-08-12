@@ -194,7 +194,7 @@ function Profile() {
           <div className="w-full flex justify-between items-center border-b-2 py-7 px-8">
             <h1 className="text-3xl font-bold gradient-text2">My Description</h1>
             <button className="edit-desc">
-              <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="#FFFFFF" height="24" width="24" viewBox="0 0 24 24">
+              <svg class="css-i6dzq1" strokeLinejoin="round" strokeLinecap="round" fill="none" strokeWidth="2" stroke="#FFFFFF" height="24" width="24" viewBox="0 0 24 24">
                 <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path>
               </svg>
               Edit
