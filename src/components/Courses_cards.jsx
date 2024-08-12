@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
-
+import { Button } from "@material-tailwind/react";
 function Courses_cards() {
   return (
     <div className="flex mt-20 items-center justify-center">
@@ -63,12 +63,14 @@ function Courses_cards() {
                   {course.description}
                 </p>
                 <Link href={`/courses/${course.id}`}>
-                  <button className="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">
+                  <Button className=" bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow">
                     See More
-                  </button>
+                  </Button>
                 </Link>
               </div>
             </div>
+            <Link href={`/courses/${course.id}`}>
+            <>
             <div className="flex gap-10 mb-8 items-center justify-center">
               <div className="flex flex-col items-center gap-1">
                 <svg
@@ -141,6 +143,9 @@ function Courses_cards() {
                 </p>
               </div>
             </div>
+            </>
+            </Link>
+
           </div>
         ))}
       </div>
