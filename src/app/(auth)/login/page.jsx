@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import "./login.css";
-
+import { Button } from '@material-tailwind/react';
 function Login() {
     const [passwordVisible, setPasswordVisible] = useState(false);
     const [id, setId] = useState(0);
@@ -58,11 +58,11 @@ function Login() {
                             />
                             <p className="font-[700] text-[15px] text-[#333]">{router[id].name}</p>
                         </div>
-                        <button className="btn">Read Full Story</button>
+                        <Button className="btn">Read Full Story</Button>
                     </div>
                 </div>
                 <div className="w-full flex justify-end gap-3 mt-[22px]">
-                    <button onClick={prevSlide} className="btn bg-white text-[50px]">
+                    <Button onClick={prevSlide} className="btn bg-white text-[50px]">
                         <svg
                             width="16"
                             height="13"
@@ -77,8 +77,8 @@ function Login() {
                                 fill="#262626"
                             />
                         </svg>
-                    </button>
-                    <button onClick={nextSlide} className="btn bg-white text-[50px]">
+                    </Button>
+                    <Button onClick={nextSlide} className="btn bg-white text-[50px]">
                         <svg
                             width="16"
                             height="13"
@@ -93,7 +93,7 @@ function Login() {
                                 fill="#262626"
                             />
                         </svg>
-                    </button>
+                    </Button>
                 </div>
             </div>
             <div className="div-3 bg-white">
@@ -146,13 +146,13 @@ function Login() {
                                 <p className="font-[400] text-[14px] text-[#656567]">Remember Me</p>
                             </div>
                         </div>
-                        <button className="mt-[10px] btn text-[15px] w-full h-[40px] bg-[#FF9500] border-[#FF9500] text-[#fff] hover:bg-[#ff9500a3] hover:border-[#ff9500a3]">
+                        <Button className="mt-[10px] btn text-[15px] w-full h-[40px] bg-[#FF9500] border-[#FF9500] text-[#fff] hover:bg-[#ff9500a3] hover:border-[#ff9500a3]">
                             Login
-                        </button>
+                        </Button>
                         <div className="border-b-[1px] mt-[24px] flex justify-center rounded-[0]">
                             <p className=" mb-[-12px] bg-white px-2">OK</p>
                         </div>
-                        <button className="mt-[30px] btn w-full  text-[14px]">
+                        <Button className="mt-[30px] btn w-full  text-[14px]">
                             <svg
                                 width="24"
                                 height="24"
@@ -185,7 +185,7 @@ function Login() {
                                 </defs>
                             </svg>
                             Login with Google
-                        </button>
+                        </Button>
                         <div className="flex ">
                             <a className="text-center text-[15px] w-full mt-[10px]" href="">
                                 Don’t have an account? Sign Up{" "}
