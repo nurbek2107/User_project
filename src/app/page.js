@@ -1,12 +1,16 @@
 import Footer from '@/components/Footer/page'
 import Navbar from '@/components/Navbar/page'
-import React from 'react'
+
+// css
+import './globals.css'
 
 function App() {
   return (
     <>
-      <Navbar />
-      <div>App</div>
+      <div>
+        <Navbar />
+        <main>App</main>
+      </div>
       <Footer />
     </>
   )

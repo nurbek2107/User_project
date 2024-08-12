@@ -16,10 +16,8 @@ export default function RootLayout({ children }) {
         <link rel="shortcut icon" href="../assets/favico.png" />
       </head>
       <body className={onest.className}>
-        <main>
-          {children}
-          <Toaster />
-        </main>
+        {children}
+        <Toaster />
       </body>
     </html>
   )
